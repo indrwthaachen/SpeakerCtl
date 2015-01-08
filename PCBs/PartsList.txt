@@ -1,0 +1,17 @@
+Magnet NdFeB (cylindric) (Ø x H) 5 mm x 2 mm 			4
+Voltageregulator 3.3V						1
+Fotoresistor Serie VT Perkin Elmer VT 93			6
+LED Blue Kingbright L-7104VBC-D					1
+IR-Receiver 38 kHz 940 nm 35 ° OS-1838				1
+Tantal-Capacitor SMD 10 µF					2
+Gleichmann GE-O1602F-TMI-ATR LC-Display-White-Blue 3.3V		1
+Harvatek HT-170IRAJ IR-Emitter-940-nm-140-0805-SMD		1
+Resistor 48 kOhm						6
+USB-Charger Basetech PPC-5MU Micro-USB 1 x 1000 mA 		1
+Resistor 10 kOhm						2
+Electrolytic-Capacitor radial wired 2.5 mm 1 µF			1
+Electrolytic-Capacitor radial wired 2 mm 0.47 µF 		1
+Resistor 180 Ohm						1
+Teensy 3.1							1
+Serial port bluetooth module (Slave) : HC-06			1
+
