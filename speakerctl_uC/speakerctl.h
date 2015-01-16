@@ -1,5 +1,5 @@
 /*
-SpeakerRemote can control NuPro(R) Speakers with IR and optical feedback 
+SpeakerCtl can control NuPro(R) Speakers with IR and optical feedback 
 
 Copyright (c) 2014, Gerrit Wyen <gerrit.wyen@rwth-aachen.de>, Florian Heese <heese@ind.rwth-aachen.de>
 Institute of Communication Systems and Data Processing

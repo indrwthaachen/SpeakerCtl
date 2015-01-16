@@ -297,7 +297,8 @@ void setNewVolume(int newVolume)
             }
             //restoreInput();
             //delay(250);
-            delay(300);
+            //delay(300);
+            delay(1000);
             // read light signature after sending cmd
             readLightSignature(newSignature);
             sigDiff = compareLightSignatures(orgSignature, newSignature);
@@ -342,12 +343,55 @@ int processUserInput(char *cmd)
   if(strcmp(cmd, "scan") == 0)
   { 
  
+    int signature[6], newSignature[6];
+    int sigDiff;
+          
     if(currentVolume == -100)
         BTSerial.println("not initialized"); 
     else
     {
       
+      BTSerial.println("{");
       
+      for(int i=-80; i<=0; i=i+1)
+      {
+        
+
+          
+          setNewVolume(i);
+          // read and print current light signature
+          delay(1000);
+          readLightSignature(signature);
+          
+          BTSerial.print("{");
+          BTSerial.print(i, DEC);   
+          BTSerial.print(",");
+          BTSerial.print(signature[0], DEC);   
+          BTSerial.print(",");
+          BTSerial.print(signature[1], DEC);   
+          BTSerial.print(",");
+          BTSerial.print(signature[2], DEC);    
+          BTSerial.print(","); 
+          BTSerial.print(signature[3], DEC); 
+          BTSerial.print(",");   
+          BTSerial.print(signature[4], DEC);  
+          BTSerial.print(",");  
+          BTSerial.print(signature[5], DEC);  
+          BTSerial.println("},");
+        
+          // reread light signature to determine noise
+          
+         // readLightSignature(newSignature);
+         // sigDiff = compareLightSignatures(signature, newSignature);  
+         
+         // BTSerial.print(" Noise: ");
+         // BTSerial.println(sigDiff, DEC);
+          
+          
+        
+      }
+      
+       BTSerial.println("};");
     }
   }
   else

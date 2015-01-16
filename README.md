@@ -23,6 +23,7 @@ The enclosure is made up of three parts:
 * top.stl
 * middle.stl
 * bottom.stl
+
 which can be easily 3D printed on any consumer-grade 3D Printer.
 After printing these parts must be stacked/glued together. 
  
